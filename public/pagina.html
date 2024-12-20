@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relojes Elegantes</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div id="header"></div>
+
+  <main>
+    <div id="main-container">
+     
+      <section id="catalogo">
+        <h2>Productos Disponibles</h2>
+        <div id="productos-container"></div>
+      </section>
+
+      
+      <section id="carrito">
+        <h2>Tu Carrito</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="carrito-body">
+
+          </tbody>
+        </table>
+        <div id="total-container">
+
+          <a name="carrito"></a>
+          <h3>Total: $<span id="total-price">0</span></h3>
+          <div id="acciones">
+
+            <button id="finalizarCompra" onclick="pagar()">Comprar</button>
+            <button id="logout" onclick="cerrarSesion()">Cerrar Sesión</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <div id="footer"></div>
+
+  <script src="js/catalogo-carrito.js" defer></script>
+  <script src="js/headerfooter.js" defer></script>
+  <script src="js/darkmode.js" defer></script>
+
+
+</body>
+</html>
+
+
